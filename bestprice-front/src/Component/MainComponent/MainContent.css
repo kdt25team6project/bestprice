@@ -1,0 +1,66 @@
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1280px;
+  margin: 0 auto; 
+}
+
+/* 캐러셀 그룹과 냉장고를 가로로 배치하는 컨테이너 */
+.carousel-fridge-container {
+  display: flex;
+  width: 90%;
+  gap: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+/* 캐러셀 그룹(추천 레시피와 상품/레시피 캐러셀) */
+.carousel-group {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 25vh;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+}
+
+/* 나만의 냉장고 */
+.my-fridge {
+  flex: 3;
+  height: 100%;
+  background-color: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.movecarousel {
+  height: 100%;
+}
+
+.recipe {
+  height: 100%;
+}
+
+.living-tips,
+.carousel-container2,
+.meal-suggestion {
+  width: 90%;
+  margin: 20px auto;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+}
+
+.meal-content {
+  background-color: #eaeaea;
+  padding: 20px;
+  text-align: center;
+}
