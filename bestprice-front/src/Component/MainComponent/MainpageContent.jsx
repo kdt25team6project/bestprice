@@ -3,6 +3,12 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import './MainContent.css';
 
+import fridgeImage from '../../asset/fridge.jpg';
+import productImage from '../../asset/product.png';
+import rankImage from '../../asset/rank.jpeg';
+import tipImage from '../../asset/tip.png';
+import recipeImage from '../../asset/recipe.png';
+
 function MainContent() {
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(0);
@@ -20,44 +26,43 @@ function MainContent() {
         <div className="carousel-group">
           {/* 상품/레시피 캐러셀 */}
           <div className="carousel-container">
-            <Carousel activeIndex={index1} onSelect={handleSelect1} 
-                      data-bs-theme="dark" className="movecarousel">
-              <Carousel.Item>
-                <img src="/logo192.png" alt="Slide 1" />
-                <Carousel.Caption>
-                  <h3>상품</h3>
-                  <p>슬라이드 설명</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src="/logo192.png" alt="Slide 2" />
-                <Carousel.Caption>
-                  <h3>레시피</h3>
-                  <p>슬라이드 설명</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src="/logo192.png" alt="Slide 1" />
-                <Carousel.Caption>
-                  <h3>인생팁</h3>
-                  <p>슬라이드 설명</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src="/logo192.png" alt="Slide 1" />
-                <Carousel.Caption>
-                  <h3>랭킹</h3>
-                  <p>슬라이드 설명</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src="/logo192.png" alt="Slide 1" />
-                <Carousel.Caption>
-                  <h3>나만의 냉장고</h3>
-                  <p>슬라이드 설명</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
+          <Carousel activeIndex={index1} onSelect={handleSelect1} data-bs-theme="dark" className="movecarousel">
+  <Carousel.Item>
+    <img src={productImage} alt="Slide 1" className="carousel-image"/>
+    <Carousel.Caption>
+      <h3>상품</h3>
+      <p>냉장고를 가득 채울 신선한 상품을 만나보세요!</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={recipeImage} alt="Slide 2" className="carousel-image"/>
+    <Carousel.Caption>
+      <h3>레시피</h3>
+      <p>신선한 재료와 좋은 레시피로 맛있는 요리를 만나보세요!</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={tipImage} alt="Slide 3" className="carousel-image"/>
+    <Carousel.Caption>
+      <h3>생활 팁</h3>
+      <p>살면서 유용한 조언, 팁을 만나보세요!</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={rankImage} alt="Slide 4" className="carousel-image"/>
+    <Carousel.Caption>
+      <h3>랭킹</h3>
+      <p>어떤 레시피가 많은사람들에게 맛있는 요리를 선물했을까요?</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={fridgeImage} alt="Slide 5" className="carousel-image"/>
+    <Carousel.Caption>
+      <h3>나만의 냉장고</h3>
+      <p>자신의 냉장고를 관리해 보세요!</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
           </div>
 
           {/* 추천 레시피 캐러셀 */}
