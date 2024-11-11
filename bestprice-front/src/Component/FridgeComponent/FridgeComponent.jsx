@@ -15,13 +15,13 @@ function FridgeComponent() {
      // 오른쪽 패널(유통기한 알림)이 열렸는지 여부를 추적하는 상태
     const [isRightCanvasOpen, setIsRightCanvasOpen] = useState(false);
 
-    //
+    // 카테고리 선택 
     const [selectedCategory, setSelectedCategory] = useState('');
-    //
+    // 음식 이름 입력
     const [foodName, setFoodName] = useState('');
-    //
+    // 음식 수량
     const [quantity, setQuantity] = useState('');
-    //
+    // 유통기한
     const [expirationDate, setExpirationDate] = useState(new Date());
 
     // Emoji 선택 상태 추가

@@ -92,7 +92,7 @@
 
 .fridge-compartment {
   position: absolute;
-  width: 55%;
+  width: 92%;
   background-color: #fff;
   transition: opacity 0.5s ease;
   opacity: 0;
@@ -101,9 +101,9 @@
 }
 
 .fridge-compartment-top {
-  top: 1.5%;
-  left: 2.5%;
-  height: 25%;
+  top: 2%;
+  left: 4%;
+  height: 33%;
   border-top: 70px solid rgb(184, 184, 184);
   border-bottom: 10px solid rgb(184, 184, 184);
   border-right: 70px solid rgb(224, 224, 224);
@@ -112,8 +112,8 @@
 
 .fridge-compartment-bottom {
   bottom: 2%;
-  left: 2.5%;
-  height: 51%;
+  left: 4%;
+  height: 58%;
   border-bottom: 70px solid rgb(184, 184, 184);
   border-right: 70px solid rgb(224, 224, 224);
   border-left: 70px solid rgb(224, 224, 224);
@@ -123,7 +123,7 @@
 
 .fridge-compartment-door {
   position: absolute;
-  width: 75%;
+  width: 92%;
   background-color: #ffffff;
   transition: opacity 0.5s ease;
   border-radius: 10px;
@@ -131,8 +131,8 @@
 
 .fridge-compartment-door-top {
   top: 5%;
-  left: 3.8%;
-  height: 82%;
+  left: 4%;
+  height: 90%;
   border-top: 2vh solid rgb(184, 184, 184);
   border-bottom: 0.5vh solid rgb(184, 184, 184);
   border-right: 30px solid rgb(224, 224, 224);
@@ -142,7 +142,7 @@
 .fridge-compartment-door-bottom {
   bottom: 5%;
   left: 3.8%;
-  height: 84%;
+  height: 90%;
   border-bottom: 30px solid rgb(184, 184, 184);
   border-right: 30px solid rgb(224, 224, 224);
   border-left: 30px solid rgb(224, 224, 224);
@@ -185,7 +185,7 @@
 .off-canvas {
   position: fixed;
   top: 0;
-  width: 350px;
+  width: 400px;
   height: 100%;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

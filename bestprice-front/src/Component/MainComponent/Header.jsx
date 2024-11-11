@@ -1,7 +1,10 @@
 import React from 'react';
 import './Header.css';
+import { useNavigate } from 'react-router';
 
 function Header() {
+  const navigate = useNavigate();
+
   return (
     <header className="header">
       <div className="header-left">
@@ -18,11 +21,11 @@ function Header() {
         </div>
       
       <div className="nav-buttons">
-        <button className="nav-button">상품</button>
-        <button className="nav-button">레시피</button>
-        <button className="nav-button">자취팁</button>
-        <button className="nav-button">랭킹</button>
-        <button className="nav-button">나만의 냉장고</button>
+        <button className="nav-button" onClick={() => navigate('/')}>상품</button>
+        <button className="nav-button" onClick={() => navigate('/')}>레시피</button>
+        <button className="nav-button" onClick={() => navigate('/')}>자취팁</button>
+        <button className="nav-button" onClick={() => navigate('/rank')}>랭킹</button>
+        <button className="nav-button" onClick={() => navigate('/fridge')}>나만의 냉장고</button>
       </div>
       </div>
 
