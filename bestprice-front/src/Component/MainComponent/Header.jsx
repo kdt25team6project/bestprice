@@ -9,7 +9,7 @@ function Header() {
     <header className="header">
       <div className="header-left">
       <div className="title-search-container">
-          <h1 className="header-title">베스트 프라이스</h1>
+          <h1 className="header-title" onClick={() => navigate('/')}>베스트 프라이스</h1>
           <div className="search-container">
             <select className="category-select">
               <option>레시피</option>

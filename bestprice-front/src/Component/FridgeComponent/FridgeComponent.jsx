@@ -23,7 +23,8 @@ function FridgeComponent() {
     const [quantity, setQuantity] = useState('');
     // 유통기한
     const [expirationDate, setExpirationDate] = useState(new Date());
-
+    // 냉동 여부
+    const [Frozen, setFrozen] = useState('냉장');
     // Emoji 선택 상태 추가
     const [selectedEmoji, setSelectedEmoji] = useState(null);
   
@@ -170,6 +171,11 @@ function FridgeComponent() {
                             value={quantity}
                             onChange={(e) => setQuantity(e.target.value)}
                         />
+                        <p className="input-prompt">식료품의 냉동 여부를 선택해주세요</p>
+                        <select className="input-field" value={Frozen} onChange={(e) => setFrozen(e.target.value)}>
+                            <option>냉장</option>
+                            <option>냉동</option>
+                        </select>
                         <p className="input-prompt">식료품 유통기한을 적어주세요</p>
                         <DatePicker
                             selected={expirationDate}
